@@ -1,0 +1,114 @@
+/***********************************
+Navigation bar
+************************************/      
+      #map_canvas
+       { 
+          margin: 0; 
+          padding: 0; 
+          height: 250px;
+          position: relative;
+          width: 100%;
+        }
+      #map_canvas2
+       { 
+          margin: 0; 
+          padding: 0; 
+          height: 250px;
+          position: relative;
+          width: 100%;
+        }
+        #map_canvas3
+       { 
+          margin: 0; 
+          padding: 0; 
+          height: 250px;
+          position: relative;
+          width: 100%;
+        }
+        .map-button
+        {
+          width:100%;
+          display:block;
+          height: auto;
+          text-align: center;
+          font-size: 15px;
+          cursor: pointer;
+          color:#fff;
+          padding:30px 0px;
+          font-weight:600;
+          transition: all 0.7s;
+          -webkit-transition: all 0.7s; 
+          background-color: #333
+        }
+        .center-element
+        {
+          width:100%;
+          display:block;
+          height: auto;
+          text-align: center;
+          cursor: pointer;
+          padding:30px 0px;
+        }
+
+/***********************************
+Navigation bar
+************************************/
+.navbar-default .navbar-brand {
+    color: #005000;
+}
+.navbar-default {
+    background-color: #ffffff; 
+}
+.course-text{
+    padding: 84px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #717f86;
+    font-size: 14px;
+    font-weight: 700;
+}
+.navbar-nav > li > a{
+  padding: 0px;
+  margin: 10px 5px;
+  padding: 10px 15px;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover
+{
+  color: #005000;
+}
+
+.navbar-nav .active a{
+    background: none !important;
+    color: #005000 !important;
+    outline: none;
+}
+
+.btn-trial a{
+  background-color: #005000;
+  border-radius: 25px;
+  color: #ffffff !important;
+  border: 1px solid #005000;
+}
+.btn-trial a:hover, .btn-trial a:focus{
+  border: 1px solid #005000;
+  background-color: #fff;
+  color: #005000 !important;
+}
+.navbar-default .navbar-brand {
+    font-family: 'Dosis', sans-serif !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0px;
+    height: inherit;
+    font-size: 36px;
+    margin: 20px 0px;
+}
+.navbar-default .navbar-brand span{
+  font-weight: 100 !important;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+.padding-zero{
+  padding: 0px;
+}

@@ -1,0 +1,1159 @@
+/*
+    Theme Name: Mentor
+    Theme URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+*/
+.nav-tabs {
+    margin-bottom: 15px;
+}
+.sign-with {
+    margin-top: 25px;
+    padding: 20px;
+}
+div#OR {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+    z-index: 1;
+    background: #DFDFDF;
+}
+/***************
+Estilo para el emcabezado principal
+****************/
+.borderCabecera {
+    border-style: ridge; 
+    border-color: #005000; 
+}
+.borderIcono {
+    padding: 25px;
+}
+.logosEmcabezado {
+    width: 50px; 
+    height: 50px;  
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+}
+.tituloCabecera {
+    font-size: 15px
+}
+.tituloSecundario {
+    font-size: 12px
+}
+.LogoPlan {
+    height: 50px; 
+    width: 50px;
+}
+#msgModificar {
+    color: red; 
+    visibility: hidden;
+}
+.divFondo {
+    background: url('/img/Emcabezado/fondo.png') no-repeat ;
+}
+/************************************
+style para loading
+***************************/
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('/img/Gear.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .9;
+}
+/******************************************
+css texto terminos y condiciones
+*******************************************/
+.pTerminos{
+    text-align: justify;
+}
+
+
+/*******************************************
+style check
+*******************************************/
+
+.badge-success {
+  background-color: #468847;
+}
+.badge-error {
+  background-color: #b94a48;
+}
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+}
+
+/***********/
+.paymentWrap {
+    padding: 50px;
+}
+
+.paymentWrap .paymentBtnGroup {
+    max-width: 800px;
+    margin: auto;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod {
+    padding: 40px;
+    box-shadow: none;
+    position: relative;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod.active {
+    outline: none !important;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod.active .method {
+    border-color: #4cd264;
+    outline: none !important;
+    box-shadow: 0px 3px 22px 0px #7b7b7b;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    left: 3px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method.visa {
+    background-image: url("data:image/png;base64,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");
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method.master-card {
+    background-image: url("https://www.elfcosmeticos.mx/img/logos/payment-bank.png");
+}
+
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method.paypal {
+    background-image: url("data:image/png;base64,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");
+}
+
+
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method:hover {
+    border-color: #4cd264;
+    outline: none !important;
+}
+.btn-prosim { 
+  color: #ffffff; 
+  background-color: #005000; 
+  border-color: #080808; 
+} 
+ 
+.btn-prosim:hover, 
+.btn-prosim:focus, 
+.btn-prosim:active, 
+.btn-prosim.active, 
+.open .dropdown-toggle.btn-prosim { 
+  color: #ffffff; 
+  background-color: #005000; 
+  border-color: #080808; 
+} 
+ 
+.btn-prosim:active, 
+.btn-prosim.active, 
+.open .dropdown-toggle.btn-prosim { 
+  background-image: none; 
+} 
+ 
+.btn-prosim.disabled, 
+.btn-prosim[disabled], 
+fieldset[disabled] .btn-prosim, 
+.btn-prosim.disabled:hover, 
+.btn-prosim[disabled]:hover, 
+fieldset[disabled] .btn-prosim:hover, 
+.btn-prosim.disabled:focus, 
+.btn-prosim[disabled]:focus, 
+fieldset[disabled] .btn-prosim:focus, 
+.btn-prosim.disabled:active, 
+.btn-prosim[disabled]:active, 
+fieldset[disabled] .btn-prosim:active, 
+.btn-prosim.disabled.active, 
+.btn-prosim[disabled].active, 
+fieldset[disabled] .btn-prosim.active { 
+  background-color: #005000; 
+  border-color: #080808; 
+} 
+ 
+.btn-prosim .badge { 
+  color: #005000; 
+  background-color: #ffffff; 
+}
+/*******************************************
+stylo mensajes validacion
+*******************************************/
+.row-bordered:after {
+display: inline-block;
+    width: 200px;
+    padding: 10px;
+}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+/* Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
+
+
+form .error {
+  color: #ff0000;
+}
+
+/********************************************
+carrucel productos
+********************************************/
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+.col-item
+{
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    background: #FFF;
+}
+.col-item .photo img
+{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.col-item .info
+{
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 1px;
+}
+
+.col-item:hover .info {
+    background-color: #F5F5DC;
+}
+.col-item .price
+{
+    /*width: 50%;*/
+    float: left;
+    margin-top: 5px;
+}
+
+.col-item .price h5
+{
+    line-height: 20px;
+    margin: 0;
+}
+
+.price-text-color
+{
+    color: #219FD1;
+}
+
+.col-item .info .rating
+{
+    color: #777;
+}
+
+.col-item .rating
+{
+    /*width: 50%;*/
+    float: left;
+    font-size: 17px;
+    text-align: right;
+    line-height: 52px;
+    margin-bottom: 10px;
+    height: 52px;
+}
+
+.col-item .separator
+{
+    border-top: 1px solid #E1E1E1;
+}
+
+.clear-left
+{
+    clear: left;
+}
+
+.col-item .separator p
+{
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.col-item .separator p i
+{
+    margin-right: 5px;
+}
+.col-item .btn-add
+{
+    width: 50%;
+    float: left;
+}
+
+.col-item .btn-add
+{
+     border-right: 1px solid #E1E1E1;
+}
+
+.col-item .btn-details
+{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+.controls
+{
+    margin-top: 20px;
+}
+[data-slide="prev"]
+{
+    margin-right: 10px;
+}
+/**********************************
+fin
+**********************************/
+
+body {
+	font-size: 15px;
+    line-height: 1.52;
+    color: #717f86;
+    font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    /* Baja el cuerpo de la pagina */
+    padding-top: 160px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.section-padding{
+	    padding-top: 130px;
+
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    color: #4B4B4C;
+}
+a{
+    color: #005000;
+}
+a:hover, a:focus{
+    color: #005000;
+}
+/***********************************
+Navigation bar
+************************************/
+.navbar-default .navbar-brand {
+    color: #005000;
+}
+.navbar-default {
+    background-color: #ffffff; 
+}
+.course-text{
+    padding: 84px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #717f86;
+    font-size: 14px;
+    font-weight: 700;
+}
+.navbar-nav > li > a{
+	padding: 0px;
+	margin: 10px 5px;
+	padding: 10px 15px;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover
+{
+	color: #005000;
+}
+
+.navbar-nav .active a{
+    background: none !important;
+    color: #005000 !important;
+    outline: none;
+}
+
+.btn-trial a{
+	background-color: #005000;
+	border-radius: 25px;
+	color: #ffffff !important;
+	border: 1px solid #005000;
+}
+.btn-trial a:hover, .btn-trial a:focus{
+	border: 1px solid #005000;
+	background-color: #fff;
+	color: #005000 !important;
+}
+.navbar-default .navbar-brand {
+    font-family: 'Dosis', sans-serif !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0px;
+    height: inherit;
+    font-size: 36px;
+    margin: 20px 0px;
+}
+.navbar-default .navbar-brand span{
+	font-weight: 100 !important;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+.padding-zero{
+	padding: 0px;
+}
+
+/***********************************
+Banner
+************************************/
+.banner{
+	background: url('../img/bg-banner.png') no-repeat center top;
+    background-size: cover;
+	min-height: 580px;
+    position: relative;
+}
+.bg-color{
+	background-color: RGBA(12, 11, 11, 0.82);
+	min-height: 580px;
+}
+.text-dec{
+	font-size: 24px;
+	padding: 10px 20px;
+    margin: 15px 0;
+	text-transform: uppercase;
+    color: #fff;
+}
+.text-border{
+	border: 5px solid #005000;
+	display: inline-block;
+	margin-top: 150px;
+}
+.intro-para{
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 45px;
+	color: #fff;
+	margin-top: 30px;
+}
+.quote .btn{
+    background-color: 
+}
+.modal-dialog {
+    width: 600px;
+    margin: 150px auto;
+}
+.mouse {
+    width: 25px;
+    height: 45px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -12.5px;
+    border-radius: 12px;
+}
+@-webkit-keyframes rotateplane {
+    0%   {top:10px;}
+    25%  {top:14px;}
+    50%  {top:19px;}
+    75%  {top:24px;}
+    100% {top:28px;}
+}
+@-moz-keyframes rotateplane {
+    0%   {top:10px;}
+    25%  {top:14px;}
+    50%  {top:19px;}
+    75%  {top:24px;}
+    100% {top:28px;}
+}
+@-o-keyframes rotateplane {
+    0%   {top:10px;}
+    25%  {top:14px;}
+    50%  {top:19px;}
+    75%  {top:24px;}
+    100% {top:28px;}
+}
+.mouse::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: #fff;
+    border-radius: 100%;
+    left: 50%;
+    top:10px;
+    margin-left: -2.5px;
+    transition:all 0.3s ease-in;
+ 
+     -webkit-animation-name: rotateplane; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-name: rotateplane;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.modal-content h4 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.login-box-body {
+    padding: 15px 30px;
+}
+.login-box-msg, .register-box-msg {
+    margin: 0px;
+    text-align: center;
+    padding: 0px 20px 20px;
+}
+.modal-sm {
+    width: 400px;
+}
+.padleft-right{
+    padding-left: 5px;
+    padding-right: 0px;
+}
+.big-text{
+    font-size: 35px;
+}
+.small-text{
+    font-size: 16px;
+}
+.quote .btn{
+    background-color: #005000;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+.quote .btn:hover, .quote .btn:focus{
+    background-color: #fff;
+    color: #005000;
+    border-color: #fff;
+     -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/***********************************
+Features
+************************************/
+h2{
+	font-size: 24px;
+	padding-bottom: 15px;
+}
+.bottom-line{
+	width: 25px;
+	height: 3px;
+	background-color: rgb(99, 122, 145);
+}
+.fea{
+	margin-top: 25px;
+}
+.fea-img {
+  width: 20%;
+}
+.heading {
+    width: 80%;
+}
+.fea i {
+    font-size: 39px;
+    color: #005000;
+    margin-top: 7px;
+}
+.heading h4 {
+    font-size: 17px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #000;
+    margin: 10px 0px;
+    text-align: left;
+}
+.heading p {
+  text-align: left;
+}
+/***********************************
+ Organisations
+************************************/
+#organisations{
+    background-color: rgb(247, 247, 247);
+}
+.orga-stru
+{
+    background-color: #005000;
+    width: 109px;
+    height: auto;
+    padding: 10px 10px 25px 10px;
+    text-align: center;
+    border-radius: 0px 80px 99px 99px;
+    -moz-border-radius: 0px 80px 99px 99px;
+    -webkit-border-radius: 0px 80px 99px 99px;
+    -o-border-radius: 0px 80px 99px 99px;
+}
+.orga-stru h3 {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
+.orga-stru p {
+    font-size: 14px;
+    color: white;
+    font-weight: normal;
+    line-height: 20px;
+    padding-top: 15px;
+}
+.orga-stru i
+{
+    font-size: 150px;
+    margin-top: 35px;
+    color: rgb(255, 255, 255);
+}
+h3.det-txt {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h4.sm-txt {
+    color: #005000;
+    font-size: 24px;
+}
+p.det-p {
+    padding: 40px 0px;
+}
+#pricing{
+    background: rgb(247, 247, 247);
+}
+
+#feature{
+    background: rgb(247, 247, 247);
+}
+/***********************************
+Cta
+************************************/
+#cta-2{
+    padding: 140px 0;
+}
+.cta-2-txt {
+    font-size: 24px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 34px !important;
+}
+.cta-2-form input[type="email"] {
+    border: 0px solid #CCC;
+    padding: 13px 40px;
+    font-size: 18px;
+    color: #2b5d83;
+    font-weight: 100;
+    min-width: 280px;
+    margin-left: -4px;
+    margin-bottom: 2px;
+    border: 1px solid #005000;
+    background-color: rgb(247, 247, 247);
+    border-radius: 30px 0px 0px 30px;
+}
+.cta-2-form-submit-btn {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #005000;
+    border: 2px solid #fff;
+    padding: 14px 30px;
+    margin-left: -4px;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    border-width: 1px 1px 1px 0px;
+    border-radius: 0px 30px 30px 0px;
+}
+/***********************************
+Work Shop
+************************************/
+#work-shop {
+    background-color: rgb(247, 247, 247);
+}
+.service-box{
+    background: #fff;
+    padding: 60px 30px 80px;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+}
+.icon-box i {
+    color: #005000;
+    font-size: 65px;
+}
+.ser-text {
+    font-size: 24px;
+}
+.icon-box, .icon-text {
+    padding: 20px 0px 0px;
+}
+/***********************************
+Mentor Team
+************************************/
+.pm-staff-profile-image{
+  width: 150px;
+  height: 150px;
+  background-color: #C6C6C6;
+  border-radius: 50%;
+  display: inline-block;
+}
+.pm-staff-profile-details {
+    padding: 20px 20px;
+}
+.pm-staff-profile-name {
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #2b5d83;
+}
+.pm-staff-profile-title {
+    text-transform: capitalize;
+    color: #4b4b4b;
+    font-weight: 500;
+    padding: 12px 0px;
+}
+.pm-staff-profile-bio {
+  text-transform: capitalize;
+  color: #4b4b4b;
+  font-weight: 100;
+}
+/***********************************
+Testimonial
+************************************/
+#testimonial{
+    background-color: #111;
+}
+.bg-white{
+    background-color: #fff !important;
+}
+.text-comment{
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+.text-par{
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+/***********************************
+Course
+************************************/
+[class*=" imghvr-"] figcaption, [class^="imghvr-"] figcaption {
+    background-color: #005000;
+}
+[class*=" imghvr-"], [class^="imghvr-"] {
+    background-color: #005000;
+    color: #fff;
+}
+/***********************************
+Price Table
+************************************/
+.price-table {
+    box-shadow: 0px 0px 1px 0px RGBA(0, 0, 0, 0.4);
+    position: relative;
+}
+.price-table .pricing-head {
+    background: #fff;
+    padding: 40px;
+    text-align: center;
+}
+.price-table .pricing-head h4 {
+    font-size: 22px;
+    color: #232c3b;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #232c3b;
+    padding-bottom: 20px;
+}
+.pricing-head .amount {
+    font-size: 60px;
+    font-weight: bold;
+}
+.pricing-head .curency {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    font-size: 20px;
+}
+.price-in {
+    background: #fff;
+    text-align: center;
+}
+.btn-bg {
+    border: 0px;
+    border-radius: 0px;
+    color: #fff !important;
+    padding: 20px 0px;
+    font-weight: bold !important;
+    font-size: 14px;
+    background-color: #005000;
+}
+/***********************************
+Contact Us
+************************************/
+.contact form .form {
+    width: 100%;
+    height: auto;
+    padding: 15px 15px 12px;
+    font-size: 18px;
+    margin-bottom: 18px;
+    color: #7f7f7f;
+    letter-spacing: 0.5px;
+}
+#contact .form-control {
+    background: #fafafa;
+    border: 1px solid rgba(119, 81, 81, 0.34);
+    width: 100%;
+	margin-bottom: 15px;
+    border-radius: 0;
+    
+}
+.textarea {
+    height: 228px;
+    max-width: 100%;
+    max-height: 229px;
+}
+.light {
+    font-weight: 100;
+}
+.white{
+    color: #fff !important;
+}
+
+.validation {
+    color: red;
+    display:none;
+    margin: 0 0 20px;
+    font-weight:400;
+    font-size:13px;
+}
+
+#sendmessage {
+    color: green;
+    border:1px solid green;
+    display:none;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#errormessage {
+    color: red;
+    display:none;
+    border:1px solid red;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#sendmessage.show, #errormessage.show, .show {
+	display:block;
+}
+/***********************************
+Footer
+************************************/
+.footer {
+    margin-top: 5px;
+    padding: 60px 0 20px;
+    background: #111;
+    color: #ccc;
+}
+.footer a {
+    color: #fff;
+}
+
+.footer h3{
+	font-weight: 300;
+	letter-spacing: 0.05em;
+	margin: 0 0 40px;
+	font-size: 24px;
+}
+.footer .form-control {
+    border-radius: 30px;
+    border: none;
+    background: rgba(255,255,255,.1);
+    padding-left: 30px;
+    color: #e5e6e7;
+    margin-bottom: 0;
+    height: 48px;
+}
+.footer .social-links li a {
+    color: #fff;
+    font-size: 32px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.footer .social-links li {
+    display: inline-block;
+    margin: 0 25px 25px;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.footer .mc-trial {
+    margin: 20px 0;
+}
+.footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 40px;
+    padding: 40px 0 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.btn-submit:hover, .btn-submit:focus{
+    background-color: #005000;
+    color: #fff;
+}
+.btn-submit{
+	padding: 14px 12px;
+	border-radius: 50px;
+	text-transform: uppercase;
+    background-color: #005000;
+    color: #fff;
+}
+.btn-submit i{
+	padding-left: 8px;
+}
+
+.btn-sec {
+    margin-top: 20px;
+}
+.ser-btn {
+    padding: 10px 18px;
+    border: 0px;
+    background-color: #222935;
+    color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.mem-info{
+    padding: 45px 10px 0px;
+    background-color: #eee;
+}
+.mem-info h4 {
+    font-size: 18px;
+    padding: 10px 0px;
+}
+.mem-info h3{
+    font-size: 24px;
+    padding: 15px 0px;
+}
+.mem-info h5
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mem-info p {
+    margin: 0 0 10px;
+}
+.agent-social li {
+    display: inline-block;
+    padding: 0px 10px 0px 0px;
+    margin-bottom: 10px;
+}
+.btn {
+    padding: 10px 20px;
+}
+.light-form-button{
+    background: #005000;
+    border: 1px solid rgba(119, 81, 81, 0.34);
+    width: 24%;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    color: #fff;: #fafafa;
+    border: 1px solid rgba(119, 81, 81, 0.34);
+    width: 24%;
+    margin-bottom: 15px;
+     -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btn-green, .btn-green:hover{
+    background-color: #005000;
+    color: #fff;
+}
+.footer .form-control:focus{
+    box-shadow: none;
+}
+/***********************************
+************************************
+Responsive media queries
+************************************
+***********************************/
+@media (min-width: 769px) and (max-width: 980px) {
+    .ser-text {
+    font-size: 20px;
+    }
+    .service-box, .feature-info, .orga-stru{
+        margin-bottom: 30px;
+    }
+    .pricing-head .amount {
+    font-size: 51px;
+    }
+    .price-table .pricing-head h4 {
+    font-size: 18px;
+    }
+}
+@media (min-width: 451px) and (max-width: 768px) {
+    .ser-text {
+    font-size: 20px;
+    }
+    .service-box, .feature-info{
+        margin-bottom: 30px;
+    }
+
+    .pricing-head .amount {
+    font-size: 51px;
+    }
+    .price-table .pricing-head h4 {
+    font-size: 18px;
+    }   
+}
+@media (min-width: 20px) and (max-width: 450px) {
+    .text-dec {
+    font-size: 20px;
+    }
+    .big-text {
+    font-size: 30px;
+    }
+    .small-text {
+    font-size: 14px;
+    }
+    .intro-para {
+    font-size: 30px;
+    }
+    .header-section p{
+        font-size: 14px;
+    }
+    .heading {
+    margin-bottom: 20px;
+    }
+    .orga-stru i {
+    font-size: 92px;
+    }
+    .orga-stru {
+    padding: 5px 5px 15px 5px;
+    width: 75px;
+    margin-bottom: 20px;
+    }
+    .orga-stru h3 {
+    font-size: 28px;
+    }
+    .orga-stru p {
+    font-size: 13px;
+    }
+    h3.det-txt {
+    font-size: 28px;
+    }
+    .cta-2-txt {
+    font-size: 20px;
+    }
+    .service-box, .text-comment, .price-table{
+        margin-bottom: 30px;
+    }
+    .contact-form-button{
+        width: 40%;
+    }
+    .footer .social-links li {
+    margin: 0 5px 25px;
+    }
+    .cta-2-form-submit-btn {
+    font-size: 10px;
+    }
+    .cta-2-form input[type="email"] {
+    padding: 13px 10px;
+    font-size: 10px;
+    min-width: 187px;
+    }
+    .modal-sm {
+    width: 300px;
+    }
+    .login-box-body {
+    padding: 15px 20px;
+    }
+    .navbar-default .navbar-brand{
+        margin-left: 10px;
+    }
+    .navbar-default .navbar-nav > li > a{
+        text-align: center;
+    }
+}
