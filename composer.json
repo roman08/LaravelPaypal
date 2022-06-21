@@ -17,7 +17,7 @@
         "laravelcollective/html": "^5.3.0",
         "odannyc/laravel-alertify": "^1.0",
         "paypal/rest-api-sdk-php": "^1.13",
-        "guzzlehttp/guzzle": "~5.2",
+        "guzzlehttp/guzzle": "~6.5",
         "phpmailer/phpmailer": "dev-master",
         "tcg/voyager": "^1.0"
     },
